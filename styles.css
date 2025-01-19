@@ -283,6 +283,7 @@ h4 {
   width: 90%;
   margin: 0 auto;
   max-width: 1400px;
+  overflow: hidden;
 }
 
 /* List Styling */
@@ -1047,15 +1048,22 @@ body {
 }
 
 @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2rem; /* Maintain a clear hierarchy */
-    margin-top: 1.5rem; /* Adjusted for better alignment */
-    line-height: 1.2; /* Improve readability */
+  .message-grid {
+    grid-template-columns: 1fr; /* Single column on small screens */
+    gap: 1rem; /* Reduce gap for compact layout */
   }
-  .tagline {
-    font-size: 1.2rem; /* Slightly larger for better readability */
-    margin-top: 1rem; /* Adjust for spacing consistency */
-    line-height: 1.4; /* Improve readability */
+
+  .message-card {
+    padding: 1.5rem; /* Reduce padding */
+  }
+
+  .profile-image {
+    width: 150px; /* Adjust size for smaller screens */
+    height: 150px;
+  }
+
+  .message-content p {
+    text-align: left; /* Optional for better readability */
   }
 }
 
